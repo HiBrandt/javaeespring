@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 普通bean -->
+    <bean id="helloWorld" class="com.study.spring.spring01.HelloWorld">
+        <property name="name" value="user"/>
+        <property name="id" value="1"/>
+    </bean>
+
+    <!-- 工厂bean -->
+    <bean id="carfactory" class="com.study.spring.spring01.CarFactory"></bean>
+
+</beans>
